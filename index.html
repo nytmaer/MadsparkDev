@@ -580,6 +580,169 @@
   .animate.d5 { animation-delay: 0.7s; }
   .animate.d6 { animation-delay: 0.85s; }
 
+  /* FEATURED PROJECT CARD */
+  .project-card--featured {
+    border: 1px solid rgba(200,81,26,0.4);
+    background: linear-gradient(135deg, rgba(200,81,26,0.06) 0%, var(--ink2) 60%);
+    grid-column: span 2;
+  }
+  @media (max-width: 700px) {
+    .project-card--featured { grid-column: span 1; }
+  }
+
+  /* VISA OF LOVE SPOTLIGHT */
+  .visa-spotlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background: var(--ink2);
+    border: 1px solid rgba(200,81,26,0.25);
+    padding: 3rem;
+    border-radius: 2px;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .visa-spotlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: linear-gradient(to bottom, var(--accent), var(--accent2));
+  }
+
+  @media (max-width: 800px) {
+    .visa-spotlight { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+  }
+
+  .visa-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .visa-title {
+    font-family: var(--sans);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: var(--surface);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+  }
+
+  .visa-tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--accent2);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .visa-body {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    color: rgba(247,244,239,0.65);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  .visa-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .visa-feat {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-family: var(--serif);
+    font-size: 0.9rem;
+    color: rgba(247,244,239,0.6);
+    line-height: 1.4;
+  }
+
+  .visa-feat-icon {
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .visa-endings-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .visa-endings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .visa-ending {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2px;
+    border: 1px solid;
+  }
+
+  .visa-ending--gold { background: rgba(232,160,80,0.08); border-color: rgba(232,160,80,0.25); }
+  .visa-ending--amber { background: rgba(200,81,26,0.07); border-color: rgba(200,81,26,0.2); }
+  .visa-ending--red { background: rgba(180,40,40,0.07); border-color: rgba(180,40,40,0.2); }
+  .visa-ending--gray { background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.08); }
+
+  .ve-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+  .ve-title {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--surface);
+  }
+
+  .ve-desc {
+    font-family: var(--serif);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .visa-roles {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 2px;
+  }
+
+  .visa-role { flex: 1; text-align: center; }
+  .vr-label {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.2rem;
+  }
+  .vr-name {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent2);
+  }
   /* MOBILE NAV */
   @media (max-width: 600px) {
     .nav-links { display: none; }
@@ -675,6 +838,16 @@
       </div>
     </a>
 
+    <a class="project-card project-card--featured" href="#visa-of-love" target="_self">
+      <div class="project-tag">Narrative Game · Choice-Driven</div>
+      <div class="project-name">Visa of Love: The K-1 Experience</div>
+      <div class="project-desc">You fell in love across the ocean. Now you have 90 days, one visa, and a relationship held together by hope, Wi-Fi, and questionable decision-making. 12 episodes. 4 endings. One Drama Meter.</div>
+      <div class="project-footer">
+        <span class="project-lang">HTML5 · Interactive Fiction</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </a>
+
     <a class="project-card" href="https://github.com/nytmaer/super-beam-carnival" target="_blank" rel="noopener">
       <div class="project-tag">Interactive · Experiment</div>
       <div class="project-name">Super Beam Carnival</div>
@@ -706,6 +879,69 @@
     <div class="section-label">// The Other Half</div>
     <h2 class="section-title">Creative Work</h2>
   </div>
+  <div class="visa-spotlight" id="visa-of-love">
+    <div class="visa-left">
+      <div class="visa-eyebrow">Featured Project · Narrative Game</div>
+      <h3 class="visa-title">Visa of Love:<br>The K-1 Experience</h3>
+      <p class="visa-tagline">You fell in love across the ocean. Now you have 90 days, one visa, and a relationship held together by hope, Wi-Fi, and questionable decision-making.</p>
+      <p class="visa-body">A choice-driven narrative game about the real emotional rollercoaster of K-1 fiancé visa relationships. Choose your role — The Sponsor or The Fiancé — then survive 12 episodes of escalating relationship drama. Every choice shifts your Love, Trust, Money, and Culture stats.</p>
+      <div class="visa-features">
+        <div class="visa-feat"><span class="visa-feat-icon">💍</span><span>12 fully written episodes</span></div>
+        <div class="visa-feat"><span class="visa-feat-icon">📊</span><span>Dynamic stat system — Love, Trust, Money, Culture</span></div>
+        <div class="visa-feat"><span class="visa-feat-icon">🔥</span><span>Drama Meter: Simmering → EXPLOSIVE</span></div>
+        <div class="visa-feat"><span class="visa-feat-icon">🎲</span><span>Random events — social disasters, surprise birthdays, mysterious charges</span></div>
+        <div class="visa-feat"><span class="visa-feat-icon">📋</span><span>K-1 Visa Progress Bar — petition to wedding day</span></div>
+        <div class="visa-feat"><span class="visa-feat-icon">🎬</span><span>Producer narration + Confessional Cam journal</span></div>
+      </div>
+    </div>
+    <div class="visa-right">
+      <div class="visa-endings-label">4 Unique Endings</div>
+      <div class="visa-endings">
+        <div class="visa-ending visa-ending--gold">
+          <span class="ve-icon">💍</span>
+          <div>
+            <div class="ve-title">Happily Ever After</div>
+            <div class="ve-desc">You beat the odds.</div>
+          </div>
+        </div>
+        <div class="visa-ending visa-ending--amber">
+          <span class="ve-icon">😬</span>
+          <div>
+            <div class="ve-title">Married... With Doubts</div>
+            <div class="ve-desc">You made it to the altar. Should you have?</div>
+          </div>
+        </div>
+        <div class="visa-ending visa-ending--red">
+          <span class="ve-icon">💔</span>
+          <div>
+            <div class="ve-title">The Breakup</div>
+            <div class="ve-desc">Some love stories end before they begin.</div>
+          </div>
+        </div>
+        <div class="visa-ending visa-ending--gray">
+          <span class="ve-icon">📋</span>
+          <div>
+            <div class="ve-title">Visa Denied</div>
+            <div class="ve-desc">Bureaucracy doesn't care about your feelings.</div>
+          </div>
+        </div>
+      </div>
+      <div class="visa-roles">
+        <div class="visa-role">
+          <div class="vr-label">Play as</div>
+          <div class="vr-name">The Sponsor</div>
+        </div>
+        <div class="visa-role-divider">or</div>
+        <div class="visa-role">
+          <div class="vr-label">Play as</div>
+          <div class="vr-name">The Fiancé</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider" style="margin: 3rem 0;"></div>
+
   <div class="creative-grid">
 
     <div class="creative-block">
