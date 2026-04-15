@@ -21,7 +21,7 @@ Single-file static site. No framework. No build step. Pure HTML/CSS/JS — drag 
 | **Creative Work** | Mugen No Sekai, Dark Spiral series, Eiko, In Case Of Hope |
 | **Experience** | Brackuro Studios → TriumVerityGames → Heartland → Kurohana |
 | **About** | Full stack, background, and what drives the work |
-| **Connect** | GitHub, LinkedIn, Bandcamp, Royal Road, Ko-fi, YouTube, TikTok |
+| **Connect** | GitHub, LinkedIn, Bandcamp, Royal Road, Ko-fi, YouTube, TikTok, Facebook |
 
 ---
 
@@ -49,7 +49,7 @@ Hosted via GitHub Pages
 1. Fork or clone this repo
 2. Edit `index.html` with your own content
 3. Enable GitHub Pages under **Settings → Pages → Branch: main**
-4. Live at `https://[your-username].github.io/MadsparkDev`
+4. Live at `https://nytmaer.github.io/MadsparkDev`
 
 ---
 
