@@ -1,5 +1,7 @@
 # MadsparkDev
 
+[![Support on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nytmaer)
+
 > Creative hub for **Nytmaer the Madspark** — VR systems, game design, narrative worlds & music.  
 > Founder @ [Brackuro Studios LLC](https://github.com/nytmaer)
 
@@ -60,3 +62,7 @@ MIT — use it, fork it, remix it.
 ---
 
 *Built by Kenan Brack · Brackuro Studios LLC · Bloomington, IN*
+
+## Support
+
+If you find this project useful, you can support its development on Ko-fi: **[ko-fi.com/nytmaer](https://ko-fi.com/nytmaer)**

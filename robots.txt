@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nytmaer.github.io/MadsparkDev/sitemap.xml
